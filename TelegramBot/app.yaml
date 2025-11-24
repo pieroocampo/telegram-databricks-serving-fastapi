@@ -1,0 +1,15 @@
+# Alternative app.yaml for POLLING mode
+# Use this if webhooks don't work due to authentication issues
+
+command:
+  - "python"
+  - "main_polling.py"
+
+env:
+  - name: TELEGRAM_BOT_TOKEN
+    value: "7848745642:AAFhr_RwkOKWQpgFS4eLCKdE57pN1rBw0Ok"
+  - name: DATABRICKS_SERVING_ENDPOINT
+    value: "databricks-llama-4-maverick"
+  - name: POLL_INTERVAL
+    value: "2"  # Poll every 2 seconds
+

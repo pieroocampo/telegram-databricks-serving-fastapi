@@ -1,0 +1,27 @@
+# Databricks App Configuration
+# This file configures authentication and access settings
+
+resources:
+  apps:
+    telegram_bot:
+      name: telegram-bot
+      description: "Telegram bot integration with Databricks serving endpoints"
+      
+      # Allow unauthenticated access to specific endpoints
+      config:
+        command:
+          - "uvicorn"
+          - "main:app"
+          - "--host"
+          - "0.0.0.0"
+          - "--port"
+          - "8000"
+        
+        env:
+          - name: TELEGRAM_BOT_TOKEN
+            value: "<Your Telegram Bot Token>"
+          - name: DATABRICKS_SERVING_ENDPOINT
+            value: "Your Databricks Serving Endpoint"
+
+
+
