@@ -7,9 +7,9 @@ command:
 
 env:
   - name: TELEGRAM_BOT_TOKEN
-    value: "7848745642:AAFhr_RwkOKWQpgFS4eLCKdE57pN1rBw0Ok"
+    value: "<YOUR TELEGRAM TOKEN)"
   - name: DATABRICKS_SERVING_ENDPOINT
-    value: "databricks-llama-4-maverick"
+    value: "<YOUR SERVICE ENDPOINT>"
   - name: POLL_INTERVAL
     value: "2"  # Poll every 2 seconds
 
