@@ -12,7 +12,7 @@ This FastAPI application serves as a bridge between a Telegram bot and a Databri
 ## Architecture
 
 ```
-Telegram User → Telegram API → FastAPI Webhook → Databricks Endpoint → FastAPI → Telegram API → User
+Telegram User → Telegram API <- FastAPI Databricks App → Databricks Endpoint → FastAPI → Telegram API → User
 ```
 
 ## Setup
