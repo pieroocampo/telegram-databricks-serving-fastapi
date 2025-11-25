@@ -3,13 +3,13 @@
 
 command:
   - "python"
-  - "main_polling.py"
+  - "main.py"
 
 env:
   - name: TELEGRAM_BOT_TOKEN
-    value: "<YOUR TELEGRAM TOKEN)"
+    value: "<Your Telegram Bot Token>"
   - name: DATABRICKS_SERVING_ENDPOINT
-    value: "<YOUR SERVICE ENDPOINT>"
+    value: "Your Databricks Serving Endpoint"
   - name: POLL_INTERVAL
     value: "2"  # Poll every 2 seconds
 
